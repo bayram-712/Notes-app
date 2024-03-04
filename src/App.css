@@ -1,0 +1,266 @@
+body {
+    background-color: #eeeeee;
+}
+
+/* Navbar.jsx */
+
+.nav {
+    box-shadow: 0 2px 8px 2px #aaaaaa, 0 8px 8px 8px #eeeeee;
+    background-color: white;
+}
+
+.nav .content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.searchBlock {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    width: 88.34%;
+    border-radius: 8px;
+}
+
+.searchBlock #searchIcon {
+    margin: 12px;
+    margin-left: 18px;
+}
+
+.searchBlock input {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 8px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.searchBlock input::placeholder {
+    color: silver;
+}
+
+.searchBlock #clearIcon {
+    margin: 12px;
+    margin-right: 18px;
+}
+
+#linkCreate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000ff;
+    width: 6.66%;
+    border-radius: 24px;
+}
+
+#linkCreate .addBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66.66%;
+    text-align: center;
+}
+
+#linkCreate p {
+    color: white;
+}
+
+/* Top.jsx */
+
+.top {
+    background-color: #eeeeee;
+    margin-top: 8px;
+}
+
+.top .content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 32px;
+    padding-top: 16px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.top .upper p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    padding: 12px;
+}
+
+.top .lower {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.top .lower p {
+    color: #777777;
+    text-transform: uppercase;
+    width: 25%;
+    border-bottom: 1px solid #777777;
+    cursor: pointer;
+}
+
+.top .lower p:hover {
+    color: skyblue;
+    border-bottom: 1px solid skyblue;
+}
+
+.top .lower .current {
+    color: skyblue;
+    border-bottom: 1px solid skyblue;
+}
+
+.top .right {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* NotesList.jsx */
+
+.home {
+    background-color: #eeeeee;
+}
+
+.home .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Note.jsx */
+
+.note {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #bbbbbb;
+    padding: 12px;
+    width: 90%;
+    height: 40vh;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.note .topSingle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.note #type {
+    padding: 8px;    
+    border-radius: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: 0 0 10px 5px silver;
+}
+
+.note .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.note .middleSingle {
+    margin-bottom: 12px;
+}
+
+.note .title {
+    font-size: 24px;
+    color: blue;
+}
+
+.note .title:visited {
+    color: blue;
+}
+.note .body  {
+    color: black;
+}
+.note .body:visited {
+    color: black;
+}
+
+.note .left {
+    width: 40%;
+}
+
+/* SingleNote.jsx */
+.single {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    padding-bottom: 48px
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px;
+}
+
+.image img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.noteSingle {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.noteSingle h2 {
+    text-align: center;
+    padding: 8px;
+    font-size: 36px;
+}
+
+.noteSingle textarea {
+    padding: 4px;
+    line-height: 2;
+    font-size: 24px;
+    outline: 0;
+    border: none;
+}
+
+/* Create.jsx */
+
+.single input, .single select{
+    padding: 4px;
+    line-height: 2;
+    font-size: 24px;
+    outline: 0;
+    border: none;
+}
+
+.single select {
+    padding: 13px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.single label {
+    text-align: center;
+    font-size: 24px;
+    padding: 4px;
+}

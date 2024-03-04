@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const url = "http://localhost:5174/note";
+const url = "https://json-server-40tw.onrender.com/note";
 export const getNotes = createAsyncThunk(
   "note/getNotes",
   async (_, thunkAPI) => {
